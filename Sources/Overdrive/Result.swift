@@ -67,11 +67,16 @@ extension Result {
     ///
     /// - parameter transform: transform block
     ///
-    /// - returns: `Result<T>`
-    public func map<U>(_ transform: (T) -> U) -> Result<U> {
+    /// - returns: `Result<U>`
+    public func map<U>(_ transform: (T) throws -> U) -> Result<U> {
         switch self {
         case .value(let value):
-            return Result<U>.value(transform(value))
+            do {
+                let newValue = try transform(value)
+                return Result<U>.value(newValue)
+            } catch {
+                return Result<U>.error(error)
+            }
         case .error(let error):
             return Result<U>.error(error)
         }
