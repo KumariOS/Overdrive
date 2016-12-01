@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import TestSupport
+
 @testable import URLSession
 
 class DataTaskTests: XCTestCase {

@@ -5,10 +5,10 @@ var package = Package(
     targets: [
         Target(name: "Overdrive"),
         Target(name: "Extensions"),
-        Target(name: "URLSession",
-               dependencies: [
-                .Target(name: "Overdrive")
-            ])
+        Target(name: "URLSession", dependencies: ["Overdrive"]),
+        Target(name: "TestSupport", dependencies: ["Overdrive"]),
+        Target(name: "OverdriveTests", dependencies: ["TestSupport"]),
+        Target(name: "URLSessionTests", dependencies: ["TestSupport"])
     ],
     exclude: [
         "Sources/Support",

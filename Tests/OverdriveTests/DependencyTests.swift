@@ -7,10 +7,11 @@
 //
 
 import XCTest
+import TestSupport
 
 @testable import Overdrive
 
-class DependencyTests: TestCase {
+class DependencyTests: XCTestCase {
     
     /// Test `addDependency(_:)` method
     func testDependencyAdd() {
@@ -73,6 +74,7 @@ class DependencyTests: TestCase {
         let testExpecation = expectation(description: "Dependency order of execution test expectation")
         
         var results: [Result<Int>] = []
+        let dispatchQueue = DispatchQueue.global(qos: .utility)
 
         func add(result: Result<Int>) {
             dispatchQueue.sync {
