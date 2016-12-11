@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Foundation
 import Overdrive
 import TestSupport
 

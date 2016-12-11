@@ -12,6 +12,11 @@ import Overdrive
 /// Provides interface for loading requests
 open class DataTask: Task<(Data, URLResponse)> {
     
+    static var session: URLSession = {
+        let configuration = URLSessionConfiguration.default
+        return URLSession(configuration: configuration)
+    }()
+    
     /// `URLRequest` object
     let request: URLRequest
     
@@ -27,7 +32,7 @@ open class DataTask: Task<(Data, URLResponse)> {
     /// - Parameters:
     ///   - request: URL request
     ///   - session: `URLSession` object, defaults to shared url session
-    public init(request: URLRequest, session: URLSession = .shared) {
+    public init(request: URLRequest, session: URLSession = DataTask.session) {
         self.request = request
         self.session = session
         
@@ -45,7 +50,7 @@ open class DataTask: Task<(Data, URLResponse)> {
     /// - Parameters:
     ///   - url: `URL`
     ///   - session: `URLSession` object, defaults to shared url session
-    convenience init(url: URL, session: URLSession = .shared) {
+    convenience init(url: URL, session: URLSession = DataTask.session) {
         let request = URLRequest(url: url)
         self.init(request: request, session: session)
     }
@@ -57,7 +62,7 @@ open class DataTask: Task<(Data, URLResponse)> {
     ///   - session: `URLSession` object, defaults to shared url session
     ///
     /// - Returns: Optional `DataTask` instance (nil if url string is invalid)
-    convenience init?(urlString: String, session: URLSession = .shared) {
+    convenience init?(urlString: String, session: URLSession = DataTask.session) {
         guard let url = URL(string: urlString) else {
             return nil
         }

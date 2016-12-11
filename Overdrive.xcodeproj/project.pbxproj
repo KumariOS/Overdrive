@@ -17,6 +17,7 @@
 		B334B4F71DE76853006343D0 /* DataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B334B4F61DE76853006343D0 /* DataTask.swift */; };
 		B334B4FB1DE769FD006343D0 /* DataTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B334B4FA1DE769FD006343D0 /* DataTaskTests.swift */; };
 		B334B4FC1DE76A26006343D0 /* URLSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B334B4ED1DE76664006343D0 /* URLSession.framework */; };
+		B356D9891DFDA03D00763C63 /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356D9881DFDA03D00763C63 /* PhotoTests.swift */; };
 		B36FE53F1D908296003C6A77 /* Overdrive.h in Headers */ = {isa = PBXBuildFile; fileRef = B36FE53E1D908291003C6A77 /* Overdrive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B36FE5401D90829E003C6A77 /* Overdrive.h in Headers */ = {isa = PBXBuildFile; fileRef = B36FE53E1D908291003C6A77 /* Overdrive.h */; };
 		B36FE5501D9082F3003C6A77 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FE5281D9081E2003C6A77 /* Condition.swift */; };
@@ -56,6 +57,7 @@
 		B334B4F31DE766F5006343D0 /* URLSession+Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Result.swift"; sourceTree = "<group>"; };
 		B334B4F61DE76853006343D0 /* DataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTask.swift; sourceTree = "<group>"; };
 		B334B4FA1DE769FD006343D0 /* DataTaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTaskTests.swift; sourceTree = "<group>"; };
+		B356D9881DFDA03D00763C63 /* PhotoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
 		B36FE4E91D9080B7003C6A77 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		B36FE4EF1D9080E8003C6A77 /* Overdrive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Overdrive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36FE5171D908181003C6A77 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				B334B4FA1DE769FD006343D0 /* DataTaskTests.swift */,
+				B356D9881DFDA03D00763C63 /* PhotoTests.swift */,
 			);
 			path = URLSessionTests;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				B36FE57C1D9083B5003C6A77 /* ResultTests.swift in Sources */,
 				B36FE57E1D9083B5003C6A77 /* TaskConditionDependencyTests.swift in Sources */,
 				B334B4FB1DE769FD006343D0 /* DataTaskTests.swift in Sources */,
+				B356D9891DFDA03D00763C63 /* PhotoTests.swift in Sources */,
 				B36FE5821D9083B5003C6A77 /* TaskQueueDelegateTests.swift in Sources */,
 				B36FE5831D9083B5003C6A77 /* TaskTests.swift in Sources */,
 				B3B03DDB1DE101F600F4A5FC /* TaskConditionTests.swift in Sources */,

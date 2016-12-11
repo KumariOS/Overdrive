@@ -8,7 +8,7 @@ var package = Package(
         Target(name: "URLSession", dependencies: ["Overdrive"]),
         Target(name: "TestSupport", dependencies: ["Overdrive"]),
         Target(name: "OverdriveTests", dependencies: ["TestSupport"]),
-        Target(name: "URLSessionTests", dependencies: ["TestSupport"])
+        Target(name: "URLSessionTests", dependencies: ["Overdrive", "URLSession", "TestSupport"])
     ],
     exclude: [
         "Sources/Support",
