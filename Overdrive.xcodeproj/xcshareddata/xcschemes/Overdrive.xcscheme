@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Overdrive.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B334B4D91DE76664006343D0"
+               BuildableName = "URLSession.framework"
+               BlueprintName = "URLSession"
+               ReferencedContainer = "container:Overdrive.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
