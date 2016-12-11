@@ -18,7 +18,7 @@ open class DataTask: Task<(Data, URLResponse)> {
     }()
     
     /// `URLRequest` object
-    let request: URLRequest
+    public let request: URLRequest
     
     /// `URLSession` object
     weak var session: URLSession?
@@ -50,7 +50,7 @@ open class DataTask: Task<(Data, URLResponse)> {
     /// - Parameters:
     ///   - url: `URL`
     ///   - session: `URLSession` object, defaults to shared url session
-    convenience init(url: URL, session: URLSession = DataTask.session) {
+    public convenience init(url: URL, session: URLSession = DataTask.session) {
         let request = URLRequest(url: url)
         self.init(request: request, session: session)
     }
@@ -62,7 +62,7 @@ open class DataTask: Task<(Data, URLResponse)> {
     ///   - session: `URLSession` object, defaults to shared url session
     ///
     /// - Returns: Optional `DataTask` instance (nil if url string is invalid)
-    convenience init?(urlString: String, session: URLSession = DataTask.session) {
+    public convenience init?(urlString: String, session: URLSession = DataTask.session) {
         guard let url = URL(string: urlString) else {
             return nil
         }
