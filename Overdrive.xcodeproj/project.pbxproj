@@ -18,6 +18,7 @@
 		B334B4FB1DE769FD006343D0 /* DataTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B334B4FA1DE769FD006343D0 /* DataTaskTests.swift */; };
 		B334B4FC1DE76A26006343D0 /* URLSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B334B4ED1DE76664006343D0 /* URLSession.framework */; };
 		B356D9891DFDA03D00763C63 /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356D9881DFDA03D00763C63 /* PhotoTests.swift */; };
+		B356D98A1DFDA26D00763C63 /* TestSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B326D9AC1DF04920004D6E58 /* TestSupport.framework */; };
 		B36FE53F1D908296003C6A77 /* Overdrive.h in Headers */ = {isa = PBXBuildFile; fileRef = B36FE53E1D908291003C6A77 /* Overdrive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B36FE5401D90829E003C6A77 /* Overdrive.h in Headers */ = {isa = PBXBuildFile; fileRef = B36FE53E1D908291003C6A77 /* Overdrive.h */; };
 		B36FE5501D9082F3003C6A77 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FE5281D9081E2003C6A77 /* Condition.swift */; };
@@ -126,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B356D98A1DFDA26D00763C63 /* TestSupport.framework in Frameworks */,
 				B334B4FC1DE76A26006343D0 /* URLSession.framework in Frameworks */,
 				B3C4EF4F1D908DCC006BE749 /* Extensions.framework in Frameworks */,
 				B3C4EF4E1D908DBD006BE749 /* Overdrive.framework in Frameworks */,
